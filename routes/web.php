@@ -20,3 +20,7 @@ Route::get('/', function () {
 require __DIR__.'/auth.php';
 
 Route::get('voter/', [\App\Http\Controllers\VotersController::class, 'index']);
+Route::get('home/', [\App\Http\Controllers\VotersController::class, 'home']);
+
+
+Route::get('admin-index/', [\App\Http\Controllers\AdministratorController::class, 'index']);

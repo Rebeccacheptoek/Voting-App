@@ -9,4 +9,7 @@ class VotersController extends Controller
     function index(){
         return view(  'core/voters.index');
     }
+    function home(){
+        return view(  'core/voters.home');
+    }
 }
